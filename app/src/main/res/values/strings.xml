@@ -7,7 +7,7 @@
     <string name="krb">Kelvin</string>
     <string name="rrb">Rankin</string>
     <string name="convert_button">CONVERT</string>
-    <string name="output">Output</string>
+    <string name="output">   </string>
     <string name="convert_text">Convert:</string>
 </resources>
 

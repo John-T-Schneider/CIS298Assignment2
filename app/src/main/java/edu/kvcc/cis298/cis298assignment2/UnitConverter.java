@@ -13,23 +13,23 @@ public class UnitConverter {
         return fah;
     }
     public static double CtoK(double cel){
-        double kel=cel+237.15;
+        double kel=cel+273.15;
         return kel;
     }
     public static double CtoR(double cel){
-        double ran=(cel*1.8)+32+459.67;
+        double ran=(cel+273.15)*1.8;
         return ran;
     }
     //Fahrenheit Conversions
     public static double FtoC(double fah){
-        double cel=(fah-32)*1.8;
+        double cel=(fah-32)/1.8;
         return cel;
     }
     public static double FtoF(double fah){
         return fah;
     }
     public static double FtoK(double fah){
-        double kel=(fah-32)*1.8+237.15;
+        double kel=(fah+459.67)/1.8;
         return kel;
     }
     public static double FtoR(double fah){
@@ -42,7 +42,7 @@ public class UnitConverter {
         return cel;
     }
     public static double KtoF(double kel){
-        double fah=(kel-273.15)*1.8+32;
+        double fah=(kel*1.8)-459.67;
         return fah;
     }
     public static double KtoK(double kel){
@@ -54,7 +54,7 @@ public class UnitConverter {
     }
     //Rankin Conversions
     public static double RtoC(double ran){
-        double cel=(ran-32-459.67)/2.25;
+        double cel=(ran/1.8)-273.15;
         return cel;
     }
     public static double RtoF(double ran){
