@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">CIS298Assignment2</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="crb">Celsius</string>
+    <string name="frb">Fahrenheit</string>
+    <string name="krb">Kelvin</string>
+    <string name="rrb">Rankin</string>
+    <string name="convert_button">CONVERT</string>
+    <string name="output">Output</string>
+    <string name="convert_text">Convert:</string>
 </resources>
+
