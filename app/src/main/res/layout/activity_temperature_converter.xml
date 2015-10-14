@@ -17,9 +17,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_alignTop="@+id/endGroup"
-        android:layout_toLeftOf="@+id/convert_button"
-        android:layout_toStartOf="@+id/convert_button">
+        android:layout_below="@+id/to"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -63,16 +63,14 @@
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/convert_button"
         android:id="@+id/convert_button"
         android:layout_gravity="bottom"
-        android:layout_above="@+id/output"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="78dp"
         android:onClick="convert"
-        />
+        android:layout_below="@+id/startGroup"
+        android:layout_centerHorizontal="true" />
 
 
     <RadioGroup
@@ -82,8 +80,8 @@
         android:layout_gravity="center_vertical"
 
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/convert_button"
-        android:layout_toEndOf="@+id/convert_button">
+        android:layout_alignRight="@+id/userTemp"
+        android:layout_alignEnd="@+id/userTemp">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -141,6 +139,26 @@
         android:id="@+id/equationSolution"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/from_text"
+        android:id="@+id/from"
+        android:layout_above="@+id/startGroup"
+        android:layout_alignLeft="@+id/startGroup"
+        android:layout_alignStart="@+id/startGroup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/to_text"
+        android:id="@+id/to"
+        android:layout_above="@+id/endGroup"
+        android:layout_alignLeft="@+id/endGroup"
+        android:layout_alignStart="@+id/endGroup" />
 
 
 </RelativeLayout>

@@ -9,5 +9,7 @@
     <string name="convert_button">CONVERT</string>
     <string name="output">   </string>
     <string name="convert_text">Convert:</string>
+    <string name="from_text">From:</string>
+    <string name="to_text">To:</string>
 </resources>
 
